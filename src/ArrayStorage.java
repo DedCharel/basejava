@@ -14,8 +14,11 @@ public class ArrayStorage {
     }
 
     void save(Resume r) {
-        storage[size] = r;
-        size++;
+        if (size < 10000) { //проверим переполнение массива
+            storage[size] = r;
+            size++;
+        } else
+            System.out.println("Превышен размер массива");
     }
 
     Resume get(String uuid) {

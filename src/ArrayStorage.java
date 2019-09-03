@@ -23,7 +23,7 @@ public class ArrayStorage {
 
     Resume get(String uuid) {
 
-        for (int i = 0; i < size - 1; i++) {  //обход заполненой части массива
+        for (int i = 0; i < size; i++) {  //обход заполненой части массива
             if (uuid.equals(storage[i].uuid)) {
                 return storage[i];   //возвращаем найденый элемент;
             }

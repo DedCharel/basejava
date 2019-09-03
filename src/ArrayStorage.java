@@ -4,7 +4,7 @@ import java.util.Arrays;
  * Array based storage for Resumes
  */
 public class ArrayStorage {
-    private int size = 0; //индекс нового крайнего элемента
+    private int size = 0; //размер заполненого массива
 
     Resume[] storage = new Resume[3];
 

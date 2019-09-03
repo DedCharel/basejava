@@ -5,9 +5,9 @@ import java.util.Arrays;
  */
 public class ArrayStorage {
     private int size = 0; //размер заполненого массива
-    private int maxsize = 10000; //размер всего массива
+    private int maxSize = 10000; //размер всего массива
 
-    Resume[] storage = new Resume[maxsize];
+    Resume[] storage = new Resume[maxSize];
 
     void clear() {
         Arrays.fill(storage, 0, size, null); //заполняем массив null
@@ -15,7 +15,7 @@ public class ArrayStorage {
     }
 
     void save(Resume r) {
-        if (size < maxsize) { //проверим переполнение массива
+        if (size < maxSize) { //проверим переполнение массива
             storage[size] = r;
             size++;
         } else
